@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>I&amp;C Stories | Ink &amp; Consequences</title>
+    <meta
+      name="description"
+      content="Explore Ink & Consequences Stories—our monthly issues, cover archive, and contributor directories." />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon-96x96.png"
+      sizes="96x96" />
+    <link
+      rel="apple-touch-icon"
+      href="images/apple-touch-icon.png"
+      sizes="180x180" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <meta name="theme-color" content="#0F1F2E" />
+
+    <script src="scripts.js" defer></script>
+  </head>
+
+  <body>
+    <a href="#main-content" class="sr-only">Skip to content</a>
+
+    <header class="site-header">
+      <div class="logo-container">
+        <a href="index.html" aria-label="Ink & Consequences Home">
+          <img src="images/inklogo.png" alt="Ink & Consequences Logo" />
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          type="button">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <ul id="primary-nav" class="main-nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="imprints.html">Imprints</a></li>
+          <li><a href="submissions.html">Submissions</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="page-header">
+        <h1>I&amp;C Stories</h1>
+        <p class="page-intro">
+          Monthly issues, archived by year—plus annual contributor directories
+          as we grow.
+        </p>
+      </section>
+
+      <section class="page-content ic-stories">
+        <div class="ic-layout">
+          <!-- SIDEBAR -->
+          <aside class="ic-sidebar" aria-label="Issue archive">
+            <div class="ic-sidebar__inner">
+              <h2 class="ic-sidebar__title">Issue Archive</h2>
+
+              <!-- Year jump (works even if you add more years later) -->
+              <nav class="ic-archive" aria-label="Issue years">
+                <a class="btn ic-archive__year" href="#year-2027">2027</a>
+              </nav>
+
+              <nav
+                class="ic-archive ic-archive--months"
+                aria-label="Jump to month (2027)">
+                <a class="btn ic-archive__pill" href="#2027-01">Jan</a>
+                <a class="btn ic-archive__pill" href="#2027-02">Feb</a>
+                <a class="btn ic-archive__pill" href="#2027-03">Mar</a>
+                <a class="btn ic-archive__pill" href="#2027-04">Apr</a>
+                <a class="btn ic-archive__pill" href="#2027-05">May</a>
+                <a class="btn ic-archive__pill" href="#2027-06">Jun</a>
+                <a class="btn ic-archive__pill" href="#2027-07">Jul</a>
+                <a class="btn ic-archive__pill" href="#2027-08">Aug</a>
+                <a class="btn ic-archive__pill" href="#2027-09">Sep</a>
+                <a class="btn ic-archive__pill" href="#2027-10">Oct</a>
+                <a class="btn ic-archive__pill" href="#2027-11">Nov</a>
+                <a class="btn ic-archive__pill" href="#2027-12">Dec</a>
+              </nav>
+
+              <hr class="ic-sidebar__rule" />
+
+              <h3 class="ic-sidebar__subtitle">Contributor Directories</h3>
+              <p class="ic-sidebar__note">
+                Annual directories begin in Year 2.
+              </p>
+
+              <!-- placeholder link you can enable later -->
+              <a
+                class="ic-sidebar__disabled"
+                href="#directories"
+                aria-disabled="true"
+                tabindex="-1">
+                View Directories (Coming Soon)
+              </a>
+            </div>
+          </aside>
+
+          <!-- MAIN CONTENT -->
+          <div class="ic-main">
+            <section class="mag-hero" aria-labelledby="mag-hero-title">
+              <div class="mag-hero__content">
+                <p class="mag-hero__kicker">Digital Magazine</p>
+                <h2 id="mag-hero-title" class="mag-hero__title">
+                  Ink &amp; Consequences Stories
+                </h2>
+                <p class="mag-hero__dek">
+                  Curated fiction across the edges of genre—monthly issues,
+                  featured contributors, and seasonal themes.
+                </p>
+
+                <div class="mag-hero__actions">
+                  <a class="btn btn-submit" href="submissions.html">Submit</a>
+                  <a class="btn" href="#year-2027">Browse Issues</a>
+                  <a class="btn" href="contact.html">Subscribe</a>
+                </div>
+              </div>
+
+              <div class="mag-feature" aria-label="Featured issue">
+                <a class="mag-feature__card" href="issues/2027-01.html">
+                  <div class="mag-feature__meta">
+                    <p class="mag-feature__label">Featured Issue</p>
+                    <h3 class="mag-feature__title">January 2027</h3>
+                    <p class="mag-feature__desc">
+                      Highlights, editor’s note, and the full table of contents.
+                    </p>
+                  </div>
+                  <img
+                    class="mag-feature__cover"
+                    src="images/1.png"
+                    alt="Ink & Consequences Stories — January 2027 cover" />
+                </a>
+              </div>
+            </section>
+            <!-- YEAR 1 -->
+            <div class="ic-center">
+              <section class="ic-year" id="year-2027" aria-labelledby="year-2027-title">
+              <div class="ic-year__header">
+                <h2 id="year-2027-title">2027 Issues</h2>
+                <p class="ic-year__sub">
+                  Click a cover to view the issue page.
+                </p>
+              </div>
+
+              <div class="ic-covers" role="list">
+                <!-- COVER CARD TEMPLATE:
+                     - Replace href with your issue URL
+                     - Replace img src/alt with cover image
+                     - (Optional) add status badge text like "Now Available" / "Coming Soon"
+                -->
+
+                <a
+                  class="cover-card"
+                  id="2027-01"
+                  href="issues/2027-01.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/2.png"
+                    alt="Ink & Consequences Stories — January 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-02"
+                  href="issues/2027-02.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/3.png"
+                    alt="Ink & Consequences Stories — February 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-03"
+                  href="issues/2027-03.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/4.png"
+                    alt="Ink & Consequences Stories — March 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-04"
+                  href="issues/2027-04.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/5.png"
+                    alt="Ink & Consequences Stories — April 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-05"
+                  href="issues/2027-05.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/6.png"
+                    alt="Ink & Consequences Stories — May 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-06"
+                  href="issues/2027-06.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/7.png"
+                    alt="Ink & Consequences Stories — June 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-07"
+                  href="issues/2027-07.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/8.png"
+                    alt="Ink & Consequences Stories — July 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-08"
+                  href="issues/2027-08.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/9.png"
+                    alt="Ink & Consequences Stories — August 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-09"
+                  href="issues/2027-09.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/10.png"
+                    alt="Ink & Consequences Stories — September 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-10"
+                  href="issues/2027-10.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/11.png"
+                    alt="Ink & Consequences Stories — October 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-11"
+                  href="issues/2027-11.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/12.png"
+                    alt="Ink & Consequences Stories — November 2027 cover" />
+                </a>
+
+                <a
+                  class="cover-card"
+                  id="2027-12"
+                  href="issues/2027-12.html"
+                  role="listitem">
+                  <img
+                    class="cover-card__img"
+                    src="images/13.png"
+                    alt="Ink & Consequences Stories — December 2027 cover" />
+                </a>
+              </div>
+            </section>
+
+            <!-- YEAR 2 (directories placeholder) -->
+            <section
+              class="ic-directories"
+              id="directories"
+              aria-labelledby="directories-title">
+              <div class="ic-year__header">
+                <h2 id="directories-title">Contributor Directories</h2>
+                <p class="ic-year__sub">
+                  This section will appear starting in Year 2 (annual
+                  directories).
+                </p>
+              </div>
+
+              <!-- Example future grid. Keep commented until ready. -->
+              <!--
+              <div class="ic-directories__grid" role="list">
+                <a class="directory-card" href="directories/2027.html" role="listitem">
+                  <span class="directory-card__title">2027 Directory</span>
+                  <span class="directory-card__desc">Annual contributor index</span>
+                </a>
+              </div>
+              -->
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Ink & Consequences. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
