@@ -38,21 +38,37 @@
   });
 })();
 
-// Contact form placeholder (until hosting is chosen)
-const contactForm = document.getElementById('contact-form');
-const formNote = document.getElementById('form-note');
+// Contact form
+document.addEventListener("DOMContentLoaded", () => {
+  const contactForm = document.getElementById("contact-form");
+  const formNote = document.getElementById("form-note");
 
-if (contactForm && formNote) {
-  contactForm.addEventListener('submit', (e) => {
+  if (!contactForm || !formNote) return;
+
+  contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     const hp = contactForm.querySelector('input[name="company"]');
-    if (hp && hp.value.trim() !== '') return; // spam
+    if (hp && hp.value.trim() !== "") return; // spam
+    formNote.textContent = "Sending…";
 
-    formNote.textContent =
-      'Thanks! This form isn’t connected yet — once hosting is finalized, we’ll enable delivery.';
-    contactForm.reset();
+    try {
+      const formData = new FormData(contactForm);
+
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      formNote.textContent =
+        "Thank you for reaching out — we’ll be in touch as soon as we can.";
+      contactForm.reset();
+    } catch (error) {
+      formNote.textContent =
+        "Something went wrong. Please try again in a moment.";
+    }
   });
-}
+});
 
 // Theme tooltips (Submissions page)
 (function () {
