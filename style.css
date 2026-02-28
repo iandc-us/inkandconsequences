@@ -1079,6 +1079,7 @@ body.imprints-page {
 
 .page-content.blog-layout {
   padding-top: 32px;
+  max-width: 1300px;
 }
 
 /* Mobile */
