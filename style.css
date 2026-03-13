@@ -1214,7 +1214,7 @@ body.imprints-page {
 .tip {
   position: absolute;
   top: calc(100% + 10px);
-  left: 0;
+  right: 0;
   z-index: 50;
   width: min(380px, 92vw);
   padding: 0.9rem 1rem;
@@ -1323,7 +1323,7 @@ body.imprints-page {
 
 .submissions-sidebar .sidebar-card {
   border-radius: 16px;
-  overflow: hidden; /* THIS is the key */
+ /* overflow: hidden;*/ /* THIS is the key */
 }
 .submissions-sidebar .theme-list {
   display: flex;
