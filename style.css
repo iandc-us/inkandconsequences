@@ -1448,3 +1448,12 @@ body.imprints-page {
   line-height: 22px;
   font-size: 0.75rem;
 }
+
+.cover-template {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  cursor: pointer;
+}
