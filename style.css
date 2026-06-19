@@ -1563,3 +1563,20 @@ body.imprints-page {
   margin: 1.5rem auto;
   cursor: pointer;
 }
+
+.theme-note {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+}
+
+.theme-note a {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.theme-note a:hover {
+    text-decoration: underline;
+}
