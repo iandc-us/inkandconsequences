@@ -828,6 +828,31 @@ body.imprints-page {
   gap: 18px;
   max-width: 520px; /* controls overall group width */
 }
+@media (max-width: 520px) {
+  .mag-hero__actions {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .issue-nav,
+  .month-nav,
+  .archive-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    overflow: visible;
+  }
+
+  .issue-nav a,
+  .month-nav a,
+  .archive-buttons a {
+    flex: 0 1 auto;
+  }
+}
 
 @media (max-width: 900px) {
   .imprints-guide__grid {
