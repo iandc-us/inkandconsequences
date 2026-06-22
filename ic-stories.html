@@ -41,13 +41,15 @@
     <a href="#main-content" class="sr-only">Skip to content</a>
 
     <header class="site-header">
+      <!--Logo-->
       <div class="logo-container">
         <a href="index.html" aria-label="Ink & Consequences Home">
           <img src="images/inklogo.png" alt="Ink & Consequences Logo" />
         </a>
       </div>
-
+      <!--Navigation-->
       <nav class="main-nav" aria-label="Primary">
+        <!--Mobile-->
         <button
           class="nav-toggle"
           aria-expanded="false"
@@ -58,61 +60,108 @@
           <span class="nav-toggle__bar"></span>
           <span class="nav-toggle__bar"></span>
         </button>
-
+        <!--Desktop-->
         <ul id="primary-nav" class="main-nav__list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="imprints.html">Imprints</a></li>
-          <li><a href="submissions.html">Submissions</a></li>
-          <li class="nav-right"><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="imprints.html">Imprints</a>
+          </li>
+          <li>
+            <a href="submissions.html">Submissions</a>
+          </li>
+          <li class="nav-right">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main id="main-content">
+        <!--Intro-->
       <section class="page-header">
-        <h1>I &amp; C Stories</h1>
+        <h1>
+          I &amp; C Stories
+        </h1>
         <p class="page-intro">
-          A digital magazine with monthly issues, archived by year—
-plus annual contributor directories as we grow.
+          A digital magazine with monthly issues, archived by year — plus annual contributor directories as we grow.
         </p>
       </section>
 
       <section class="page-content ic-stories">
         <div class="ic-layout">
-          <!-- SIDEBAR -->
+          <!-- LEFT SIDEBAR -->
           <aside class="ic-sidebar" aria-label="Issue archive">
             <div class="ic-sidebar__inner">
-              <h3 class="ic-sidebar__title">2027 Issues</h3>
-
-            
-
+              <h3 class="ic-sidebar__title">2027 Issues</h3>            
+              <!--Issue Quicklinks-->
               <nav
                 class="ic-archive ic-archive--months"
                 aria-label="Jump to month (2027)">
-                <a class="btn ic-archive__pill" href="#2027-01">Jan</a>
-                <a class="btn ic-archive__pill" href="#2027-02">Feb</a>
-                <a class="btn ic-archive__pill" href="#2027-03">Mar</a>
-                <a class="btn ic-archive__pill" href="#2027-04">Apr</a>
-                <a class="btn ic-archive__pill" href="#2027-05">May</a>
-                <a class="btn ic-archive__pill" href="#2027-06">Jun</a>
-                <a class="btn ic-archive__pill" href="#2027-07">Jul</a>
-                <a class="btn ic-archive__pill" href="#2027-08">Aug</a>
-                <a class="btn ic-archive__pill" href="#2027-09">Sep</a>
-                <a class="btn ic-archive__pill" href="#2027-10">Oct</a>
-                <a class="btn ic-archive__pill" href="#2027-11">Nov</a>
-                <a class="btn ic-archive__pill" href="#2027-12">Dec</a>
+                <!--January-->
+                <a class="btn ic-archive__pill" href="#2027-01">
+                  Jan
+                </a>
+                <!--February-->
+                <a class="btn ic-archive__pill" href="#2027-02">
+                  Feb
+                </a>
+                <!--March-->
+                <a class="btn ic-archive__pill" href="#2027-03">
+                  Mar
+                </a>
+                <!--April-->
+                <a class="btn ic-archive__pill" href="#2027-04">
+                  Apr
+                </a>
+                <!--May-->
+                <a class="btn ic-archive__pill" href="#2027-05">
+                  May
+                </a>
+                <!--June-->
+                <a class="btn ic-archive__pill" href="#2027-06">
+                  Jun
+                </a>
+                <!--July-->
+                <a class="btn ic-archive__pill" href="#2027-07">
+                  Jul
+                </a>
+                <!--August-->
+                <a class="btn ic-archive__pill" href="#2027-08">
+                  Aug
+                </a>
+                <!--September-->
+                <a class="btn ic-archive__pill" href="#2027-09">
+                  Sep
+                </a>
+                <!--October-->
+                <a class="btn ic-archive__pill" href="#2027-10">
+                  Oct
+                </a>
+                <!--November-->
+                <a class="btn ic-archive__pill" href="#2027-11">
+                  Nov
+                </a>
+                <!--December-->
+                <a class="btn ic-archive__pill" href="#2027-12">
+                  Dec
+                </a>
               </nav>
 
               <hr class="ic-sidebar__rule" />
+              <!--Directory Links-->
+              <h4>
+                Contributors
+              </h4>
 
-              <h4>Contributors</h4>
-<!--              <p class="ic-sidebar__note">
-                Annual directories begin in Year 2.
-              </p> -->
-
-              <!-- placeholder link you can enable later -->
+              <!-- Directory Link-->
 <!--              <a
                 class="ic-sidebar__disabled"
                 href="#directories"
@@ -120,7 +169,10 @@ plus annual contributor directories as we grow.
                 tabindex="-1">
                 View Directories (Coming Soon)
               </a> -->
-<h4>Archives</h4>
+              <!--Archive links by year-->
+              <h4>
+                Archives
+              </h4>
                <!-- Year jump (works even if you add more years later) -->
 <!--              <nav class="ic-archive" aria-label="Issue years">
                 <a class="btn ic-archive__year" href="#year-2027">2027</a>
@@ -135,18 +187,25 @@ plus annual contributor directories as we grow.
                 <h5>
                   Stories that linger long after the final page.
                 </h5>
-
+                <!--Quick Links-->
                 <div class="mag-hero__actions">
-                  <a class="btn btn-submit" href="submissions.html">Submit</a>
-                  <a class="btn" href="#year-2027-title">Browse Themes</a>
-                <!--  <a class="btn" href="contact.html">Subscribe</a>-->
+                  <!--Submission Guidelines Link-->
+                  <a class="btn btn-submit" href="submissions.html">
+                    Submit
+                  </a>
+                  <!--Theme Jump Link-->
+                  <a class="btn" href="#year-2027-title">
+                    Browse Themes
+                  </a>
                 </div>
               </div>
-
+              <!--Featured Issue Sidebar-->
               <div class="mag-feature" aria-label="Featured issue">
                 <a class="mag-feature__card" href="foundersedition.html">
                   <div class="mag-feature__meta">
-                    <h3>Featured Issue</h3>
+                    <h3>
+                      Featured Issue
+                    </h3>
                   </div>
                   <img
                     class="mag-feature__cover"
@@ -159,12 +218,13 @@ plus annual contributor directories as we grow.
             <div class="ic-center">
               <section class="ic-year" id="year-2027-title" aria-labelledby="year-2027-title">
               <div class="ic-year__header">
-                <h3 id="year-2027-title"><!--2027 Issues--> <!--Open Calls--> 2027 Theme Preview</h3>
+                <!--Title-->
+                <h3 id="year-2027-title">
+                  <!--Open Calls--> 2027 Theme Preview
+                </h3>
+                <!--Note to authors-->
                 <p class="theme-note">
                   For full themes, please see the <a href="foundersedition.html">Founder's Edition</a>
-                </p>
-                <p class="ic-year__sub">
-                 <!-- Click a cover to view the issue page. --> <!--For more details on themes, please see the Founder's Edition.-->
                 </p>
               </div>
 
@@ -172,9 +232,8 @@ plus annual contributor directories as we grow.
                 <!-- COVER CARD TEMPLATE:
                      - Replace href with your issue URL
                      - Replace img src/alt with cover image
-                     - (Optional) add status badge text like "Now Available" / "Coming Soon"
                 -->
-
+                <!--January-->
                 <a
                   class="cover-card"
                   href="issues/2027-01.html"
@@ -184,7 +243,7 @@ plus annual contributor directories as we grow.
                     src="images/2.png"
                     alt="Ink & Consequences Stories — January 2027 cover" />
                 </a>
-
+                <!--February-->
                 <a
                   class="cover-card"
                   href="issues/2027-02.html"
@@ -194,16 +253,17 @@ plus annual contributor directories as we grow.
                     src="images/3.png"
                     alt="Ink & Consequences Stories — February 2027 cover" />
                 </a>
-
+                <!--March-->
                 <a
-                  class="cover-card"                  href="issues/2027-03.html"
+                  class="cover-card"
+                  href="issues/2027-03.html"
                   role="listitem">
                   <img
                     class="cover-card__img"
                     src="images/4.png"
                     alt="Ink & Consequences Stories — March 2027 cover" />
                 </a>
-
+                <!--April-->
                 <a
                   class="cover-card"
                   href="issues/2027-04.html"
@@ -213,7 +273,7 @@ plus annual contributor directories as we grow.
                     src="images/5.png"
                     alt="Ink & Consequences Stories — April 2027 cover" />
                 </a>
-
+                <!--May-->
                 <a
                   class="cover-card"
                   href="issues/2027-05.html"
@@ -223,7 +283,7 @@ plus annual contributor directories as we grow.
                     src="images/6.png"
                     alt="Ink & Consequences Stories — May 2027 cover" />
                 </a>
-
+                <!--June-->
                 <a
                   class="cover-card"
                   href="issues/2027-06.html"
@@ -233,7 +293,7 @@ plus annual contributor directories as we grow.
                     src="images/7.png"
                     alt="Ink & Consequences Stories — June 2027 cover" />
                 </a>
-
+                <!--July-->
                 <a
                   class="cover-card"
                   href="issues/2027-07.html"
@@ -243,7 +303,7 @@ plus annual contributor directories as we grow.
                     src="images/8.png"
                     alt="Ink & Consequences Stories — July 2027 cover" />
                 </a>
-
+                <!--August-->
                 <a
                   class="cover-card"
                   href="issues/2027-08.html"
@@ -253,7 +313,7 @@ plus annual contributor directories as we grow.
                     src="images/9.png"
                     alt="Ink & Consequences Stories — August 2027 cover" />
                 </a>
-
+                <!--September-->
                 <a
                   class="cover-card"
                   href="issues/2027-09.html"
@@ -263,7 +323,7 @@ plus annual contributor directories as we grow.
                     src="images/10.png"
                     alt="Ink & Consequences Stories — September 2027 cover" />
                 </a>
-
+                <!--October-->
                 <a
                   class="cover-card"
                   href="issues/2027-10.html"
@@ -273,7 +333,7 @@ plus annual contributor directories as we grow.
                     src="images/11.png"
                     alt="Ink & Consequences Stories — October 2027 cover" />
                 </a>
-
+                <!--November-->
                 <a
                   class="cover-card"
                   href="issues/2027-11.html"
@@ -283,7 +343,7 @@ plus annual contributor directories as we grow.
                     src="images/12.png"
                     alt="Ink & Consequences Stories — November 2027 cover" />
                 </a>
-
+                <!--December-->
                 <a
                   class="cover-card"
                   href="issues/2027-12.html"
@@ -298,8 +358,11 @@ plus annual contributor directories as we grow.
             <!-- Active Issues-->
               <div class="ic-center">
               <section class="ic-year" id="year-2027" aria-labelledby="year-2027-title">
+                <!--Issue Lineup-->
               <div class="ic-year__header">
-                <h3 id="year-2027-title">2027 Issues</h3>
+                <h3 id="year-2027-title">
+                  2027 Issues
+                </h3>
                 <p class="ic-year__sub">
                  <!-- Click a cover to view the issue page. --> <!--For more details on themes, please see the Founder's Edition.-->
                 </p>
@@ -311,7 +374,7 @@ plus annual contributor directories as we grow.
                      - Replace img src/alt with cover image
                      - (Optional) add status badge text like "Now Available" / "Coming Soon"
                 -->
-
+                <!--January-->
               <!--  <a
                   class="cover-card"
                   id="2027-01"
@@ -322,8 +385,9 @@ plus annual contributor directories as we grow.
                     src="images/2.png"
                     alt="Ink & Consequences Stories — January 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--February-->
+              <!--  <a
                   class="cover-card"
                   id="2027-02"
                   href="issues/2027-02.html"
@@ -333,8 +397,9 @@ plus annual contributor directories as we grow.
                     src="images/3.png"
                     alt="Ink & Consequences Stories — February 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--March-->
+              <!--  <a
                   class="cover-card"
                   id="2027-03"
                   href="issues/2027-03.html"
@@ -344,8 +409,9 @@ plus annual contributor directories as we grow.
                     src="images/4.png"
                     alt="Ink & Consequences Stories — March 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--April-->  
+              <!--  <a
                   class="cover-card"
                   id="2027-04"
                   href="issues/2027-04.html"
@@ -355,8 +421,9 @@ plus annual contributor directories as we grow.
                     src="images/5.png"
                     alt="Ink & Consequences Stories — April 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--May-->
+              <!--  <a
                   class="cover-card"
                   id="2027-05"
                   href="issues/2027-05.html"
@@ -366,8 +433,9 @@ plus annual contributor directories as we grow.
                     src="images/6.png"
                     alt="Ink & Consequences Stories — May 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--June--> 
+              <!--  <a
                   class="cover-card"
                   id="2027-06"
                   href="issues/2027-06.html"
@@ -377,8 +445,9 @@ plus annual contributor directories as we grow.
                     src="images/7.png"
                     alt="Ink & Consequences Stories — June 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--July-->  
+              <!--  <a
                   class="cover-card"
                   id="2027-07"
                   href="issues/2027-07.html"
@@ -388,8 +457,9 @@ plus annual contributor directories as we grow.
                     src="images/8.png"
                     alt="Ink & Consequences Stories — July 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--August-->  
+              <!--  <a
                   class="cover-card"
                   id="2027-08"
                   href="issues/2027-08.html"
@@ -399,8 +469,9 @@ plus annual contributor directories as we grow.
                     src="images/9.png"
                     alt="Ink & Consequences Stories — August 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--September-->  
+              <!--  <a
                   class="cover-card"
                   id="2027-09"
                   href="issues/2027-09.html"
@@ -410,8 +481,9 @@ plus annual contributor directories as we grow.
                     src="images/10.png"
                     alt="Ink & Consequences Stories — September 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--October-->
+              <!--  <a
                   class="cover-card"
                   id="2027-10"
                   href="issues/2027-10.html"
@@ -421,8 +493,9 @@ plus annual contributor directories as we grow.
                     src="images/11.png"
                     alt="Ink & Consequences Stories — October 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--November-->  
+              <!--  <a
                   class="cover-card"
                   id="2027-11"
                   href="issues/2027-11.html"
@@ -432,8 +505,9 @@ plus annual contributor directories as we grow.
                     src="images/12.png"
                     alt="Ink & Consequences Stories — November 2027 cover" />
                 </a>
-
-                <a
+              -->
+                <!--December-->  
+              <!--  <a
                   class="cover-card"
                   id="2027-12"
                   href="issues/2027-12.html"
@@ -442,7 +516,8 @@ plus annual contributor directories as we grow.
                     class="cover-card__img"
                     src="images/13.png"
                     alt="Ink & Consequences Stories — December 2027 cover" />
-                </a>-->
+                </a>
+              -->  
               </div>
             </section>
             <!-- Directories -->
@@ -451,8 +526,10 @@ plus annual contributor directories as we grow.
               id="directories"
               aria-labelledby="directories-title">
               <div class="ic-year__header">
-                <h3 id="directories-title">Contributor Directories</h3>
-               
+                <!--Title-->
+                <h3 id="directories-title">
+                  Contributor Directories
+                </h3>              
               </div>
 
               <!-- Example future grid. Keep commented until ready. -->
@@ -472,13 +549,22 @@ plus annual contributor directories as we grow.
         </div>
       </section>
     </main>
-
+    <!--Footer-->
     <footer class="site-footer">
       <p>&copy; 2026 Ink & Consequences. All rights reserved.</p>
       <ul class="social-links">
-        <li><a href="https://www.instagram.com/inkandconseq/">Instagram</a></li>
-        <li><a href="https://www.pinterest.com/inkandconseq/">Pinterest</a></li>
-        <li><a href="https://discord.gg/zbsBh5QH">Discord</a></li>
+        <!--Instagram-->
+        <li>
+          <a href="https://www.instagram.com/inkandconseq/">Instagram</a>
+        </li>
+        <!--Pinterest-->
+        <li>
+          <a href="https://www.pinterest.com/inkandconseq/">Pinterest</a>
+        </li>
+        <!--Discord-->
+        <li>
+          <a href="https://discord.gg/zbsBh5QH">Discord</a>
+        </li>
       </ul>
     </footer>
   </body>
