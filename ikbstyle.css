@@ -1,0 +1,343 @@
+/* ==========================
+            Base
+   ========================== */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --paper: #f4f1e8;
+  --paper-2: #f5f1e6;
+  --ink: #0f1f2e;
+  --text: #1e1e1e;
+  --slate: #5e6a78;
+  --gold: #b89c4b;
+
+  --radius: 16px;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    color: var(--gold);
+}
+
+.role-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/*==========================
+             Fonts
+  ==========================*/
+
+body {
+    background-color: var(--paper);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: var(--text);
+    text-align: center;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: var(--text);
+    text-align: left;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: var(--text);
+    text-align: center;
+}
+
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: var(--text);
+    text-align: center;
+}
+
+h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: var(--text);
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: var(--text);
+    text-align: center;
+    font-style: italic;
+}
+
+/*========================
+        Header
+  ========================*/
+
+  .site-header {
+    text-align: center;
+    padding: 7px 8px 5px;
+    border-bottom: 1px solid var(--gold);
+    
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: rgba(245, 241, 230, 0.96);
+    backdrop-filter: blur(6px);
+}
+
+.logo-container img {
+  display: block;
+  margin: 0 auto 12px;
+  max-width: min(500px, 100%);
+  max-height: 200px;
+  height: auto;
+  width: auto;
+}
+
+/*=======================
+        Navigation
+  =======================*/
+
+  .main-nav {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  border-width: 1px;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.main-nav a:hover {
+  background: rgba(184, 156, 75, 0.5);
+}
+
+.main-nav a[aria-current='page'] {
+  background: var(--gold);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.nav-toggle {
+  display: none;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid rgba(15, 31, 46, 0.25);
+  border-radius: 999px;
+  padding: 12px 14px;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.nav-toggle__bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+/*==========================
+        Buttons
+  ==========================*/
+
+  .btn {
+  display: inline-block;
+  padding: 18px 40px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+
+  /* STANDARD LOOK = current "Submit" */
+  background: var(--ink);
+  color: var(--paper);
+  border: 3px solid var(--gold);
+  box-shadow: 0 8px 20px rgba(15, 31, 46, 0.18);
+
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--gold);
+  color: var(--ink);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(15, 31, 46, 0.18),
+    0 0 0 4px rgba(184, 156, 75, 0.18);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=====================================
+            Sidebar
+=====================================*/
+
+.issue-sidebar {
+  position: fixed;
+  top: 18rem;
+  right: 2rem;
+  width: 250px;
+  max-height: calc(100vh - 9rem);
+  overflow-y: auto;
+  padding: 1rem;
+  background: var(--ink);
+  color: var(--paper);
+  border-top: 4px solid var(--gold);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  z-index: 10;
+}
+
+.issue-toc summary {
+  cursor: pointer;
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: center;
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+
+.issue-sidebar a {
+  display: block;
+  margin: 0.45rem 0;
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 0.85rem;
+  line-height: 1.25;
+}
+
+.issue-sidebar a:hover,
+.issue-sidebar a:focus {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.issue-sidebar h3 {
+  margin: 1.5rem 0 1rem;
+  color: var(--gold);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.sidebar-months {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.sidebar-months a {
+  text-align: center;
+  padding: 0.35rem 0.5rem;
+  background: var(--ink);
+  color: var(--paper);
+  border: 2px solid var(--gold);
+  border-radius: 999px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+}
+
+.sidebar-months a:hover,
+.sidebar-months a:focus {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.back-link {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.mobile-issue-nav {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+@media (max-width: 1100px) {
+  .issue-sidebar {
+    position: static;
+    width: min(90%, 800px);
+    max-height: none;
+    margin: 1rem auto 2rem;
+  }
+
+  .mobile-issue-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--ink);
+    border: 2px solid var(--gold);
+    border-radius: 999px;
+    box-shadow: var(--shadow);
+  }
+
+  .mobile-issue-nav a {
+    color: var(--paper);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.35rem 0.6rem;
+  }
+
+  body {
+    padding-bottom: 4rem;
+  }
+}
+
